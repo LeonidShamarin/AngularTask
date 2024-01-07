@@ -1,5 +1,8 @@
 <h1>Form</h1>
-<form>
-<input type="text">
+<div>
+    <input type="password" [(ngModel)]="password" (input)="updateStrength()" placeholder="Enter your password">
+</div>
 
-</form>
+<div class="strength-section" [style.background-color]="strength[0]"></div>
+<div class="strength-section" [style.background-color]="strength[1]"></div>
+<div class="strength-section" [style.background-color]="strength[2]"></div>
