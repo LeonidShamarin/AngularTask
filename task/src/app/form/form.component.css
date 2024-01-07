@@ -1,5 +1,12 @@
 div {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.form {
+    padding-top: 50px;
+    text-align: center;
+    border: 1px dashed #ccc;
+    height: 500px;
 }
 
 .strength-section {
@@ -8,4 +15,5 @@ div {
     display: inline-block;
     margin-right: 5px;
     border: 1px solid #ccc;
+    background-color: gray;
 }

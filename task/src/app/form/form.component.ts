@@ -13,12 +13,11 @@ export class FormComponent {
     const length = this.password.length;
 
     if (length === 0) {
-      this.strength = ['', '', ''];
       this.strength = ['gray', 'gray', 'gray'];
     } else if (length < 8) {
       this.strength = ['red', 'red', 'red'];
     } else {
-      const hasLetters = /[a-zA-Z]/.test(this.password);
+      const hasLetters = /[a-zA-Zа-яА-Я]/.test(this.password);
       const hasDigits = /\d/.test(this.password);
       const hasSymbols = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(this.password);
 
@@ -32,8 +31,6 @@ export class FormComponent {
         this.strength = ['yellow', 'yellow', 'gray'];
       } else if (hasLetters || hasDigits || hasSymbols) {
         this.strength = ['red', 'gray', 'gray'];
-      } else {
-        this.strength = ['gray', 'gray', 'gray'];
       }
     }
   }
