@@ -1,6 +1,9 @@
 <div class="container">
-  <h1>Test</h1>
-  
-  <app-form></app-form>
-
+  <div class="form">
+    <h1>Password validation</h1>
+    <app-input [(password)]="password" (passwordChange)="updateStrength()"> </app-input>
+    <app-validation-sections [color]="strength[0]"></app-validation-sections>
+    <app-validation-sections [color]="strength[1]"></app-validation-sections>
+    <app-validation-sections [color]="strength[2]"></app-validation-sections>
+  </div>
 </div>

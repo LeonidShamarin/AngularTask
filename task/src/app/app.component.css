@@ -7,3 +7,10 @@
 h1 {
     text-align: center;
 }
+
+.form {
+    padding-top: 50px;
+    text-align: center;
+    border: 1px dashed #ccc;
+    height: 500px;
+}
